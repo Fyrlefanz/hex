@@ -8,3 +8,97 @@ Once downloaded, start Electrum. You will be greeted with the following screen:
 
 IMG: Electrum1
 
+On the next screen, choose Standard Wallet and press next.
+
+IMG: Electrum2
+
+Make sure your Ledger is connected to your PC. Your Ledger needs to be unlocked and you need to have the Bitcoin App open on your Ledger Device.
+Then choose the bottom option: Use a hardware device and press next.
+
+IMG: Electrum3
+
+After a few seconds Electrum should detect your Ledger. Press next.
+
+IMG: Electrum4
+
+Now we have to choose the type of addresses in your wallet.
+If your addresses start with a "1" -> choose legacy (p2pkh)
+If your addresses start with a "3" -> choose p2sh-segit (p2wpkh-p2sh)
+If your addresses start with "bc1" -> choose native segwit (p2wpkh)
+
+Don't change anything in the derivation path. Click next.
+
+IMG: Electrum5
+
+On the file encryption window, just press next.
+
+IMG: Electrum6
+
+After a few seconds you should get to the main Electrum window.
+Go to the top and click on "View" -> click on "Show Addresses".
+
+IMG: Electrum7
+
+This should give you a new tab next to "Receive" called "Addresses". Click on that.
+Now you should see all of the Bitcoin Addresses your Ledger uses. You can see the balances of each address and the number of transactions (Tx) on the right side
+
+IMG Electrum8
+
+We have to claim each address with a balance 1-by-1.
+Choose the top address with a balance and rightclick it (doublefingerclick on MacOS) and choose "Copy Address"
+
+IMG Electrum9
+
+Now go to the HEX Website using this link (You will get 10% more HEX using our link):
+https://go.hex.win/?r=0xUnsereAddresse
+
+Make sure to log into MetaMask and allow MetaMask to connect to the Website.
+
+Then click on the "Claim" tab in the top.
+Paste your address into the field and press on the "Claim This Address" button
+
+IMG Go_HEX1
+
+You will see a message that looks like this: Claim_HEX_to_YourETHAddress
+Copy this message by clicking on the circled icon.
+
+IMG Go_HEX2
+
+Then go back to Electrum. Rightclick on your address and choose "Sign/verify message"
+
+IMG Electrum10
+
+Paste your copied message into the top field called "Message"
+Make sure your Ledger is still connected, logged in and that you have the Bitcoin App open on the device.
+Then press on the "Sign" button in the bottom left.
+
+IMG Electrum11
+
+After a few seconds a Message hash should appear.
+Check if the Message hash matches the one shown on your Ledger Device.
+If it matches, confirm the signing proccess on your Ledger.
+
+IMG Electrum12
+
+Now you should see a signature in the "Signature" field.
+Copy the complete signature.
+
+IMG Electrum13
+
+Go back to the website and paste your signature into the "Signature" field.
+
+IMG Go_HEX3
+
+Now you can choose the number of days you want to stake. For FreeClaims the minimum number of days is 350.
+Maximum stake length is 5555 days. To get maximum bonuses you have to choose a stakelength of 3641 days or more.
+Once you have chosen your stakelength click on the "Submit Claim" button.
+Confirm the transaction in MetaMask and wait for it to confirm.
+Congratulations, you have successfully FreeClaimed HEX.
+
+If you have multiple addresses with a balance go back to step 8 and repeat the proccess for the other addresses.
+If you have any further questions, or are stuck somewhere pm me on Telegram @Earlofcockwood
+
+
+
+
+
