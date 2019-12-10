@@ -6,6 +6,678 @@
   <link href="style.css" rel="stylesheet" />
 </head>
 <body>
+  
+  <table class="highlight tab-size js-file-line-container" data-tab-size="8" style="box-sizing: border-box; border-spacing: 0px; border-collapse: collapse; tab-size: 8; color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+  <tbody style="box-sizing: border-box;">
+    <tr style="box-sizing: border-box;">
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Welcome to the Ledger FreeClaiming Guide</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="2" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="3" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">To claim using a Ledger you will need Electrum. Electrum is needed to sign messages.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="4" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Remember: you will not be exporting/exposing your privat keys. They will stay on your ledger and there is no chance to get compromised.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="5" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">You can download Electrum here: https://electrum.org/#download</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="6" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="7" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Once downloaded, start Electrum. You will be greeted with the following screen:</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="8" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="9" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG: Electrum1</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="10" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="11" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">On the next screen, choose Standard Wallet and press next.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="12" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="13" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG: Electrum2</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="14" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="15" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Make sure your Ledger is connected to your PC. Your Ledger needs to be unlocked and you need to have the Bitcoin App open on your Ledger Device.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="16" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Then choose the bottom option: Use a hardware device and press next.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="17" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="18" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG: Electrum3</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="19" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="20" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">After a few seconds Electrum should detect your Ledger. Press next.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="21" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="22" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG: Electrum4</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="23" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="24" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Now we have to choose the type of addresses in your wallet.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="25" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">If your addresses start with a "1" -&gt; choose legacy (p2pkh)</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="26" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">If your addresses start with a "3" -&gt; choose p2sh-segit (p2wpkh-p2sh)</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="27" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">If your addresses start with "bc1" -&gt; choose native segwit (p2wpkh)</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="28" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="29" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Don't change anything in the derivation path. Click next.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="30" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="31" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG: Electrum5</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="32" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="33" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">On the file encryption window, just press next.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="34" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="35" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG: Electrum6</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="36" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="37" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">After a few seconds you should get to the main Electrum window.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="38" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Go to the top and click on "View" -&gt; click on "Show Addresses".</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="39" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="40" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG: Electrum7</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="41" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="42" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">This should give you a new tab next to "Receive" called "Addresses". Click on that.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="43" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Now you should see all of the Bitcoin Addresses your Ledger uses. You can see the balances of each address and the number of transactions (Tx) on the right side</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="44" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="45" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG Electrum8</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="46" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="47" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">We have to claim each address with a balance 1-by-1.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="48" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Choose the top address with a balance and rightclick it (doublefingerclick on MacOS) and choose "Copy Address"</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="49" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="50" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG Electrum9</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="51" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="52" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Now go to the HEX Website using this link (You will get 10% more HEX using our link):</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="53" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">https://go.hex.win/?r=0xUnsereAddresse</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="54" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="55" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Make sure to log into MetaMask and allow MetaMask to connect to the Website.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="56" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="57" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Then click on the "Claim" tab in the top.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="58" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Paste your address into the field and press on the "Claim This Address" button</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="59" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="60" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG Go_HEX1</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="61" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="62" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">You will see a message that looks like this: Claim_HEX_to_YourETHAddress</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="63" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Copy this message by clicking on the circled icon.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="64" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="65" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG Go_HEX2</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="66" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="67" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Then go back to Electrum. Rightclick on your address and choose "Sign/verify message"</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="68" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="69" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG Electrum10</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="70" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="71" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Paste your copied message into the top field called "Message"</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="72" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Make sure your Ledger is still connected, logged in and that you have the Bitcoin App open on the device.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="73" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Then press on the "Sign" button in the bottom left.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="74" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="75" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG Electrum11</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="76" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="77" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">After a few seconds a Message hash should appear.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="78" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Check if the Message hash matches the one shown on your Ledger Device.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="79" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">If it matches, confirm the signing proccess on your Ledger.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="80" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="81" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG Electrum12</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="82" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="83" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Now you should see a signature in the "Signature" field.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="84" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Copy the complete signature.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="85" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="86" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG Electrum13</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="87" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="88" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Go back to the website and paste your signature into the "Signature" field.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="89" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="90" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">IMG Go_HEX3</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="91" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="92" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Now you can choose the number of days you want to stake. For FreeClaims the minimum number of days is 350.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="93" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Maximum stake length is 5555 days. To get maximum bonuses you have to choose a stakelength of 3641 days or more.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="94" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Once you have chosen your stakelength click on the "Submit Claim" button.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="95" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Confirm the transaction in MetaMask and wait for it to confirm.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="96" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">Congratulations, you have successfully FreeClaimed HEX.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="97" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">
+        <br>
+      </td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="98" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">If you have multiple addresses with a balance go back to step 8 and repeat the proccess for the other addresses.</td>
+    </tr>
+    <tr style="box-sizing: border-box;">
+      <td class="blob-num js-line-number" data-line-number="99" style="box-sizing: border-box; padding: 0px 10px; width: 50.4px; min-width: 50px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;">
+        <br>
+      </td>
+      <td class="blob-code blob-code-inner js-file-line" style="box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; color: rgb(36, 41, 46); overflow-wrap: normal; white-space: pre;">If you have any further questions, or are stuck somewhere pm me on Telegram @Earlofcockwood</td>
+    </tr>
+  </tbody>
+</table>
   <img src="./img/Electrum1.png" alt="Electrum1">
   <img src="./img/Electrum2.png" alt="Electrum2">
   <img src="./img/Electrum3.png" alt="Electrum3">
