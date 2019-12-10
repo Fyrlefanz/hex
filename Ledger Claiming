@@ -1,2 +1,10 @@
+Welcome to the Ledger FreeClaiming Guide
 
-<img src="./img/Electrum1.png" alt="Electrum1">
+To claim using a Ledger you will need Electrum. Electrum is needed to sign messages.
+Remember: you will not be exporting/exposing your privat keys. They will stay on your ledger and there is no chance to get compromised.
+You can download Electrum here: https://electrum.org/#download
+
+Once downloaded, start Electrum. You will be greeted with the following screen:
+
+IMG: Electrum1
+
