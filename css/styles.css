@@ -26,6 +26,11 @@ img {
 }
 
 a:link, a:visited {
+  color: #2196f3;
   text-decoration: underline;
   cursor: pointer;
+}
+
+a:link:active, a:visited:active {
+  color: #2196f3;
 }
