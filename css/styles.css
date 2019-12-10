@@ -24,3 +24,8 @@ img {
   margin-right: auto;
   margin-bottom: 5rem;
 }
+
+a:link, a:visited {
+  text-decoration: underline;
+  cursor: pointer;
+}
