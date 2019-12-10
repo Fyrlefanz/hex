@@ -1,7 +1,7 @@
-Welcome to the Ledger FreeClaiming Guide
+Welcome to the Trezor FreeClaiming Guide
 
-To claim using a Ledger you will need Electrum. Electrum is needed to sign messages.
-Remember: you will not be exporting/exposing your privat keys. They will stay on your ledger and there is no chance to get compromised.
+To claim using a Trezor you will need Electrum. Electrum is needed to sign messages.
+Remember: you will not be exporting/exposing your privat keys. They will stay on your Trezor and there is no chance to get compromised.
 You can download Electrum here: https://electrum.org/#download
 
 Once downloaded, start Electrum. You will be greeted with the following screen:
@@ -12,12 +12,12 @@ On the next screen, choose Standard Wallet and press next.
 
 IMG: Electrum2
 
-Make sure your Ledger is connected to your PC. Your Ledger needs to be unlocked and you need to have the Bitcoin App open on your Ledger Device.
+Make sure your Trezor is connected to your PC. Your Trezor needs to be unlocked.
 Then choose the bottom option: Use a hardware device and press next.
 
 IMG: Electrum3
 
-After a few seconds Electrum should detect your Ledger. Press next.
+After a few seconds Electrum should detect your Trezor.On my screenshot its detects a Ledger, because I don't have a Trezor. Press next.
 
 IMG: Electrum4
 
@@ -40,7 +40,7 @@ Go to the top and click on "View" -> click on "Show Addresses".
 IMG: Electrum7
 
 This should give you a new tab next to "Receive" called "Addresses". Click on that.
-Now you should see all of the Bitcoin Addresses your Ledger uses. You can see the balances of each address and the number of transactions (Tx) on the right side
+Now you should see all of the Bitcoin Addresses your Trezor uses. You can see the balances of each address and the number of transactions (Tx) on the right side
 
 IMG Electrum8
 
@@ -69,16 +69,15 @@ Then go back to Electrum. Rightclick on your address and choose "Sign/verify mes
 IMG Electrum10
 
 Paste your copied message into the top field called "Message"
-Make sure your Ledger is still connected, logged in and that you have the Bitcoin App open on the device.
+Make sure your Trezor is still connected and unlocked.
 Then press on the "Sign" button in the bottom left.
 
 IMG Electrum11
 
-After a few seconds a Message hash should appear.
-Check if the Message hash matches the one shown on your Ledger Device.
-If it matches, confirm the signing proccess on your Ledger.
+After a few seconds you can confirm the signing on your Trezor.
+Go ahead and do that. Eventually you have to input your PIN on your PC, using your Trezor.
 
-IMG Electrum12
+IMG Trezor1
 
 Now you should see a signature in the "Signature" field.
 Copy the complete signature.
