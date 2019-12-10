@@ -4,8 +4,21 @@
   <meta charset="utf-8">
   <title>Pump HEX</title>
   <link href="./css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
 </head>
 <body>
+  
+  <!-- Buttonleiste Navigation -->
+	<div style="height: 50px; width: 100%; background-color: #1B1C1D; opacity: 0.85; position: fixed; top: 0px; z-index: 1">
+		<div class="ui five item inverted menu" style="margin: auto; left: 25%; position: fixed; top: 0px; height: 50px; width: 50%; z-index: 2">
+			<a class="item" id="home" onclick="openLink('home')">Home</a>
+			<a class="item" id="ledger" onclick="openLink('ledger')">Freeclaim Ledger</a>
+			<a class="item" id="trezor" onclick="openLink('trezor')">Freeclaim Trezor</a>
+			<a class="item" id="private" onclick="openLink('private')">Private Key</a>
+			<a class="item" id="aa" onclick="openLink('aa')">Adoption Amplifier</a>
+		</div>
+	</div>
+  
   
   <main>  
     <h2>Welcome to the Ledger FreeClaiming Guide</h2>
