@@ -8,6 +8,7 @@ body {
 main {
   margin: auto;
   width: 600px;
+  line-height: 1.5;
 }
 
 img {
