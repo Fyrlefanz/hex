@@ -34,3 +34,7 @@ a:link, a:visited {
 a:link:active, a:visited:active {
   color: #2196f3;
 }
+
+.centered {
+  text-align: center;
+}
